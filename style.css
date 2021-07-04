@@ -1,17 +1,18 @@
 *{
-    margin: 0;
-    padding: 0;
+   
+
     box-sizing: border-box;
 }
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 h1{
     font-size: 3rem;;
 }
 img{
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
 }
 span{
@@ -23,19 +24,67 @@ span{
     background-image: linear-gradient(orange,tomato);
     color:white;
     padding:5px 20px;
-    font-weight: bold;
+    font-weight: bolder;
     border-radius: 10px;
-    margin-top: 20px;
+    
+}
+section{
+    display: flex;
+    margin-bottom: 140px;
 }
 /* hero part design */
 .hero-part{ 
-    display: flex;
     background-image: url(img/top-banner.png);
     background-size:cover;
-    
+    background-repeat: no-repeat;
 }
 .half-side{
     padding-left: 5%;
     width:50%;
+}
+.half-side img{
+    width: 80%;
+}
+/* Dream area Design  */
+.dream-area{
+    background-image: url(img/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position:right;
+}
+/* Experience block  */
+.exp-block{
+    background-image: url(img/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+.card{
+    
+}
+.card-body{
+    border-left: 6px solid;
+    border-image: linear-gradient(orange,tomato);
+    border-image-slice: 1;
+    box-shadow:5px 10px 15px gray;
+    border-radius: 10px;
+    padding:10px 15px;
+    height: 350px;
+    
+}
+.card-body h1{
+    font-size:35px;
+    font-weight: normal;
+}
+
+/* css media query */
+@media(max-width:960px){
+    section{
+        flex-direction: column;
+    }
+}
+footer{
+    text-align: center;
+}
+footer span{
+    color:black;
 
 }
