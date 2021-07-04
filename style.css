@@ -11,11 +11,8 @@ body{
 h1{
     font-size: 3rem;;
 }
-img{
-    max-width: 100%;
-    height: auto;
-}
-span{
+
+.orange-color{
     color:orange;
 }
 .btn{
@@ -28,7 +25,7 @@ span{
     border-radius: 10px;
     
 }
-section{
+.flexible-content{
     display: flex;
     margin-bottom: 140px;
 }
@@ -42,8 +39,8 @@ section{
     padding-left: 5%;
     width:50%;
 }
-.half-side img{
-    width: 80%;
+.half-side img {
+    max-width: 100%;
 }
 /* Dream area Design  */
 .dream-area{
@@ -57,9 +54,12 @@ section{
     background-repeat: no-repeat;
     background-position: center left;
 }
-.card{
-    
+.experimence-item {
+    width: 48%;
+    padding-left: 5%;
+    margin-right: 2%;
 }
+
 .card-body{
     border-left: 6px solid;
     border-image: linear-gradient(orange,tomato);
@@ -83,8 +83,4 @@ section{
 }
 footer{
     text-align: center;
-}
-footer span{
-    color:black;
-
 }
